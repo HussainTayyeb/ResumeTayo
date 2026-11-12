@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tayyeb Hussain – Sales × Engineering</title>
-<meta name="description" content="Tayyeb Hussain – sales professional with an engineering background. PayPal, Accenture, Volt, Shore. Based in Berlin.">
+<title>Tayyeb Hussain – GTM × Tech</title>
+<meta name="description" content="Tayyeb Hussain – go-to-market professional across sales, growth marketing, RevOps and AI automation, with an engineering background. PayPal, Accenture, Volt, Shore. Based in Berlin.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='26' fill='%23d7ff3f'/><text x='50' y='64' font-size='42' text-anchor='middle' fill='%230b0c0e' font-family='Arial' font-weight='700'>TH</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,6 +35,7 @@
   .links { display: flex; gap: 4px; }
   .links a { text-decoration: none; color: var(--muted); font-size: 14px; padding: 8px 14px; border-radius: 999px; transition: color 0.2s, background 0.2s; }
   .links a:hover { color: var(--ink); background: var(--tile-2); }
+  .links a.on { color: #0b0c0e; background: var(--lime); }
   .nav-r { display: flex; align-items: center; gap: 8px; }
   .lang { display: inline-flex; padding: 3px; border-radius: 999px; background: var(--tile-2); border: 1px solid var(--line); }
   .lang button { border: 0; background: transparent; color: var(--muted); font: 600 13px "Space Grotesk", sans-serif; padding: 6px 11px; border-radius: 999px; cursor: pointer; transition: background 0.2s, color 0.2s; }
@@ -170,6 +171,21 @@
   .res .lev { grid-column: 1 / -1; border-color: rgba(255, 122, 89, 0.5); }
   .res .lev b { color: var(--coral); font-size: 22px; margin: 4px 0; }
 
+
+  /* Content Studio: Karussell + Reel */
+  .studio { display: flex; gap: 18px; justify-content: center; align-items: flex-start; }
+  .phone { flex: 0 1 230px; min-width: 0; }
+  .phone .scr { position: relative; border-radius: 22px; overflow: hidden; background: #000; border: 6px solid #050607; box-shadow: 0 30px 60px -30px rgba(215, 255, 63, 0.25); }
+  .phone .scr.car { aspect-ratio: 4 / 5; }
+  .phone .scr.reel { aspect-ratio: 9 / 16; }
+  .phone video, .phone img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .car-track { display: flex; height: 100%; transition: transform 0.6s cubic-bezier(.2,.7,.2,1); }
+  .car-track img { flex: none; width: 100%; }
+  .dots { display: flex; gap: 5px; justify-content: center; margin-top: 10px; }
+  .dots i { width: 6px; height: 6px; border-radius: 50%; background: var(--line); transition: background 0.3s, width 0.3s; }
+  .dots i.on { background: var(--lime); width: 16px; border-radius: 4px; }
+  .phone figcaption { text-align: center; font-size: 12.5px; color: var(--muted); margin-top: 8px; }
+  @media (max-width: 560px) { .studio { gap: 10px; } }
   /* Projekte */
   .pgrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 36px; }
   .pcard { border-radius: var(--r); background: var(--tile); border: 1px solid var(--line); overflow: hidden; display: flex; flex-direction: column; transition: transform 0.45s cubic-bezier(.2,.7,.2,1), border-color 0.3s, opacity 0.8s; }
@@ -294,14 +310,15 @@
       <div>
         <div class="status rv"><span class="pulse"></span><img src="logos/shore.svg" alt=""><span data-de="Aktuell <b>Founding Account Executive bei Shore</b> · Berlin">Currently <b>Founding Account Executive at Shore</b> · Berlin</span></div>
         <h1 class="rv">Tayyeb<br><span class="o">Hussain</span></h1>
-        <p class="say rv"><span data-de="Sales <em>×</em> Engineering. Ich verbinde Menschen, Produkte und Technik – ich">Sales <em>×</em> Engineering. I connect people, products and tech – I</span> <span class="swap" id="swap">sell it</span>.</p>
+        <p class="say rv"><span data-de="GTM <em>×</em> Tech. Ich verbinde Menschen, Produkte und Daten – ich">GTM <em>×</em> Tech. I connect people, products and data – I</span> <span class="swap" id="swap">sell it</span>.</p>
       </div>
       <figure class="portrait rv" style="margin:0"><img src="photo.jpg" alt="Tayyeb Hussain"><span>Berlin</span></figure>
     </div>
-    <div class="open rv"><span class="pulse"></span><span data-de="Offen für Rollen in <b>RevOps</b>, <b>Sales Engineering</b> und <b>Integration Engineering</b>">Open to roles in <b>RevOps</b>, <b>Sales Engineering</b> and <b>Integration Engineering</b></span></div>
+    <div class="open rv"><span class="pulse"></span><span data-de="Offen für <b>Go-to-Market-Rollen</b> – am liebsten dort, wo ich auch <b>die Tools dahinter baue</b>">Open to <b>go-to-market roles</b> – ideally where I also get to <b>build the tools behind them</b></span></div>
     <div class="facts rv">
       <span data-de="<b>6+</b> Jahre in Tech"><b>6+</b> years in tech</span>
       <span data-de="<b>Pre-Sales & Sales</b> seit 2021"><b>Pre-sales & sales</b> since 2021</span>
+      <span data-de="<b>Growth</b> · Content · Analytics"><b>Growth</b> · Content · Analytics</span>
       <span data-de="<b>Payments</b> · FinTech · SaaS"><b>Payments</b> · FinTech · SaaS</span>
       <span data-de="<b>DE</b> · EN · Urdu"><b>DE</b> · EN · Urdu</span>
       <span data-de="<b>Berlin</b> · Deutschland"><b>Berlin</b> · Germany</span>
@@ -333,7 +350,7 @@
         <div class="co"><img src="logos/shore.svg" alt="Shore"><h3>Founding Account Executive <span>· Shore</span></h3></div>
         <p data-de="Baue den Outbound von 0 auf 1 auf – für SaaS-Kassen-, Buchungs- und Payment-Lösungen – und die Tools dahinter.">Building outbound from 0 to 1 for SaaS POS, booking &amp; payments – and the tools behind it.</p>
       </div>
-      <div class="tile t-lime rv"><small data-de="Leads gefunden">Leads found</small><div class="big">650+</div><p data-de="qualifiziert &amp; bewertet von einem Tool, das ich gebaut habe">qualified &amp; scored by a tool I built</p></div>
+      <div class="tile t-lime rv"><small data-de="Leads gefunden">Leads found</small><div class="big">5,000+</div><p data-de="qualifiziert &amp; bewertet von einem Tool, das ich gebaut habe">qualified &amp; scored by a tool I built</p></div>
       <div class="tile t-violet rv"><small data-de="Jahre in Tech">Years in tech</small><div class="big">6+</div><p data-de="Entwicklung, Solution Engineering, Beratung, Sales">development, solution engineering, consulting, sales</p></div>
       <div class="tile rv"><small data-de="Unternehmen">Companies</small><div class="big">4</div><p>PayPal · Accenture · Volt · Shore</p></div>
       <div class="tile t-lang rv"><small data-de="Sprachen">Languages</small>
@@ -367,11 +384,11 @@
     </div>
     <div class="fit rv">
       <div><small data-de="Wo ich am besten passe">Where I fit best</small>
-        <p data-de="Dort, wo Menschen, Prozesse und Technik zusammenkommen.">Where people, process and technology meet.</p></div>
+        <p data-de="Dort, wo Menschen, Daten und Technik zusammenkommen.">Where people, data and technology meet.</p></div>
       <div class="roles">
-        <div><b>RevOps</b><span data-de="Systeme, Daten und Prozesse, die ein Sales-Team schneller machen">Systems, data and processes that make a sales team faster</span></div>
-        <div><b>Sales Engineering</b><span data-de="Lösungen designen, Demos geben, Deals technisch gewinnen">Designing solutions, running demos, winning deals on the tech side</span></div>
-        <div><b>Integration Engineering</b><span data-de="Kunden sicher und schnell live bringen – mit API-Know-how">Getting customers live fast and safely – with hands-on API know-how</span></div>
+        <div><b data-de="RevOps &amp; Automatisierung">RevOps &amp; automation</b><span data-de="Systeme, Daten und KI-Workflows, die ein Team schneller machen – vom CRM bis zum eigenen Tool">Systems, data and AI workflows that make a team faster – from the CRM to custom tools</span></div>
+        <div><b>Growth Marketing</b><span data-de="Daten in Content und Kampagnen übersetzen, die wachsen – von der Analyse bis zum Wochenplan">Turning data into content and campaigns that grow – from analysis to the weekly plan</span></div>
+        <div><b>Sales &amp; Consulting</b><span data-de="Kunden beraten, Lösungen designen, Integrationen und Projekte bis zum Go-live führen">Advising clients, designing solutions, leading integrations and projects to go-live</span></div>
       </div>
     </div>
   </div>
@@ -387,7 +404,7 @@
 
       <div class="st l"><div class="st-when" data-de="2026 – heute">2026 –</div><div class="st-dot"></div>
         <div class="st-card"><div class="st-head"><img src="logos/shore.svg" alt="Shore"><div><h3>Founding Account Executive</h3><small data-de="Shore GmbH · Berlin · seit Sep 2026">Shore GmbH · Berlin · Sep 2026 – today</small></div></div>
-          <p data-de="Full-Cycle-Sales für SaaS-Kassen-, Buchungs- und Payment-Lösungen. Ich baue den Outbound von 0 auf 1 auf – und die Tools dahinter: Lead Finder, Outbound Brain und einen Funnel-Rechner.">Full-cycle sales of SaaS POS, booking and payment solutions. Building the outbound motion from 0 to 1 – and the tools behind it: Lead Finder, Outbound Brain and a Funnel Calculator.</p>
+          <p data-de="Full-Cycle-Sales für SaaS-Kassen-, Buchungs- und Payment-Lösungen. Ich baue den Outbound von 0 auf 1 auf – und die Tools dahinter: Lead Finder und Outbound Brain.">Full-cycle sales of SaaS POS, booking and payment solutions. Building the outbound motion from 0 to 1 – and the tools behind it: Lead Finder and Outbound Brain.</p>
           <span class="tag">Sales + Tech</span>
           <div class="mix"><div class="mix-l"><span>TECH</span><span>SALES</span></div><div class="mix-b"><i style="left:70%"></i></div></div></div></div>
 
@@ -427,7 +444,7 @@
   <div class="wrap">
     <span class="kicker" data-de="Tools">Built</span>
     <h2 data-de="Tools, die ich gebaut habe <span>– für meine eigene Arbeit.</span>">Tools I built <span>for my own work.</span></h2>
-    <p class="lead" data-de="Bei Shore mit Claude Code als KI-Partner gebaut – und jeden Tag im Einsatz.">Built at Shore with Claude Code as my AI partner – and used every day.</p>
+    <p class="lead" data-de="Mit Claude Code als KI-Partner gebaut – für meinen Vertrieb bei Shore, für Kunden und als private Projekte – und jeden Tag im Einsatz.">Built with Claude Code as my AI partner – for my sales work at Shore, for clients and as private projects – and used every day.</p>
 
     <div class="panel rv">
       <div>
@@ -435,10 +452,14 @@
         <h3>Lead Finder</h3>
         <p data-de="Automatisierte Lead-Suche für Kaltakquise bei Dienstleistern – Salons, Studios, Praxen – in der DACH-Region.">Automated prospecting for cold outreach to service businesses – salons, studios, clinics – across DACH.</p>
         <ul class="ticks">
-          <li data-de="Findet Betriebe über Google Maps nach Branche, Stadt und Radius; der Sync ergänzt nur neue">Finds businesses via Google Maps by industry, city and radius; sync only adds new ones</li>
+          <li data-de="Findet Betriebe über Google Maps nach Branche, Stadt und Radius; der Sync ergänzt nur neue. Zusätzlich Instagram-Suche über die offizielle Meta-Schnittstelle">Finds businesses via Google Maps by industry, city and radius; sync only adds new ones. Plus Instagram search via the official Meta API</li>
           <li data-de="Prüft jede Website und erkennt 20+ Buchungssysteme, Ketten, Neueröffnungen und Pain Points aus Bewertungen">Checks every website and detects 20+ booking systems, chains, new openings and pain points from reviews</li>
+          <li data-de="Buchen-Klick per Scraping: klickt automatisch den Buchen-Button auf der Website und im Google-Profil und zeigt, was danach kommt – Buchungstool, WhatsApp, nur Telefon oder Kontaktformular; erkennt so auch Bestandskunden. Dazu Inhaber und Telefonnummer">Booking-click via scraping: automatically clicks the booking button on the website and the Google profile and shows what comes next – booking tool, WhatsApp, phone only or contact form; this also flags existing customers. Plus owner name and phone number</li>
           <li data-de="Bewertet jeden Lead mit 0–100 % in A/B/C-Stufen, damit die besten zuerst angerufen werden">Scores every lead 0–100% with A/B/C tiers, so the best ones get called first</li>
-          <li data-de="Team-Funktionen: Zuweisung, Status, CRM/Excel-Export, Rückgängig für jede Änderung">Team features: assignment, status tracking, CRM/Excel export, undo for every change</li>
+          <li data-de="Interaktive Karte: alle Leads als Cluster (Farbe = bestes Tier) oder Heatmap, gleiche Filter wie in den Tabellen, Klick auf einen Punkt zeigt alles zum Lead">Interactive map: every lead as clusters (colour = best tier) or a heatmap, the same filters as the tables, click a point to see everything about the lead</li>
+          <li data-de="Tiefencheck: ein individueller Spickzettel für jedes Gespräch">Deep check: an individual cheat sheet for every call</li>
+          <li data-de="Team-Funktionen: Leads an Kollegen zuweisen (eigene Liste pro Person), Filter „Jetzt geöffnet“ für den richtigen Anrufzeitpunkt, HubSpot/Excel-Export, Rückgängig für jede Änderung">Team features: assign leads to colleagues (own list per person), an “open now” filter for the right time to call, HubSpot/Excel export, undo for every change</li>
+          <li data-de="Über 5.000 qualifizierte Leads bisher">5,000+ qualified leads so far</li>
         </ul>
         <ul class="chips"><li>Python</li><li>Flask</li><li>SQLite</li><li>Google Places API</li></ul>
       </div>
@@ -470,20 +491,45 @@
 
     <div class="panel rv">
       <div>
-        <span class="num">03 · PLANNING</span>
-        <h3 data-de="Funnel-Rechner">Funnel Calculator</h3>
-        <p data-de="Wie viele Calls braucht es bis zur Quote – und welcher Hebel bringt am meisten? Wechselt automatisch von Annahmen zu echten Call-Daten.">How many calls does it take to hit quota – and which lever moves the needle most? Switches automatically from assumptions to real call data.</p>
-        <p data-de="Probier es aus: Schieb die Regler.">Try it: move the sliders.</p>
-        <ul class="chips"><li>Funnel modeling</li><li>Planning</li><li>Analytics</li></ul>
+        <span class="num">03 · GROWTH</span>
+        <h3>Content Intelligence</h3>
+        <p data-de="Mein privates Projekt für befreundete Micro-Influencer: Es zieht ihre Instagram-Daten zusammen, zeigt, was funktioniert, und sagt ihnen, was sie als Nächstes posten sollen. Auch ein Maklerbüro nutzt es für seinen Content.">A private project for micro-influencer friends: it pulls their Instagram data together, shows what works and tells them what to post next. A real-estate broker also uses it for its content.</p>
+        <ul class="ticks">
+          <li data-de="Profil-Check: Follower, Engagement-Rate, Posts pro Woche, Reel-Anteil – und die Wirkung jedes Posts relativ zum Profil-Median (Lift) nach Format, Thema, Wochentag und Caption-Länge">Profile check: followers, engagement rate, posts per week, reel share – and every post's impact relative to the profile median (lift) by format, topic, weekday and caption length</li>
+          <li data-de="Top- und Flop-Posts mit Begründung, daraus ein Fazit und 3 To-dos für diese Woche">Top and flop posts with the reasons why, turned into a verdict and 3 to-dos for this week</li>
+          <li data-de="Wochenplan: pro Tag Format und Uhrzeit, was gedreht werden soll und Hooks zum Testen aus einer Hook-Bibliothek (1.761 analysierte Posts)">Weekly plan: format and posting time per day, what to shoot and hooks to test from a hook library (1,761 analysed posts)</li>
+          <li data-de="Reel-Analyse mit Nachdreh-Rezept, Profil-Vergleich mit Wettbewerbern, Vorher/Nachher">Reel analysis with a re-shoot recipe, profile comparison with competitors, before/after</li>
+        </ul>
+        <ul class="chips"><li>Growth marketing</li><li>Instagram analytics</li><li>Meta Graph API</li><li>Claude Code</li></ul>
       </div>
-      <div class="demo"><div class="demo-h"><span style="all:unset" data-de="Benötigte Calls pro Monat">Calls needed per month</span><span data-de="Beispielwerte">example values</span></div>
-        <div class="calc">
-          <label><span data-de="Deals pro Monat">Deals per month</span><output id="o-q"></output><input id="q" type="range" min="2" max="30" value="8"></label>
-          <label><span data-de="Erreichbarkeit (Call → Gespräch)">Connect rate</span><output id="o-c"></output><input id="c" type="range" min="5" max="60" value="25"></label>
-          <label><span data-de="Termin-Quote (Gespräch → Demo)">Meeting rate</span><output id="o-m"></output><input id="m" type="range" min="5" max="60" value="20"></label>
-          <label><span data-de="Abschluss-Quote (Demo → Deal)">Close rate</span><output id="o-w"></output><input id="w" type="range" min="5" max="60" value="25"></label>
-          <div class="res"><div><b id="calls"></b><span data-de="Calls pro Monat">calls per month</span></div><div><b id="perday"></b><span data-de="pro Arbeitstag">per working day</span></div>
-            <div class="lev"><span data-de="Größter Hebel (+5 Punkte)">Biggest lever (+5 points)</span><b id="lever"></b><span id="leverTxt"></span></div></div>
+      <div class="demo"><div class="demo-h"><span style="all:unset" data-de="Von Daten zum nächsten Post">From data to the next post</span><span>workflow</span></div>
+        <div class="flow" id="flow2">
+          <div><span data-de="Daten ziehen">Pull data</span><small>Meta API</small></div>
+          <div><span data-de="Lift messen">Measure lift</span><small data-de="vs. Median">vs. median</small></div>
+          <div><span data-de="Muster finden">Find patterns</span><small data-de="Format · Zeit">format · time</small></div>
+          <div><span data-de="3 To-dos">3 to-dos</span><small data-de="diese Woche">this week</small></div>
+          <div><span data-de="Wochenplan">Weekly plan</span><small>hooks</small></div>
+          <div><span data-de="Posten &amp; messen">Post &amp; measure</span><small>Instagram</small></div>
+        </div></div>
+    </div>
+
+    <div class="panel rv">
+      <div>
+        <span class="num">04 · CONTENT STUDIO</span>
+        <h3 data-de="Karussell- &amp; Reel-Generator">Carousel &amp; reel generator</h3>
+        <p data-de="Aus einem Thema werden fertige Posts im Markendesign – hier für ein Maklerbüro.">Turns a topic into finished posts in the brand design – here for a real-estate broker.</p>
+        <ul class="ticks">
+          <li data-de="Karussells mit 10 Slides automatisch gerendert (1080×1350) – Logo, Farben, Schriften und Fotos der Marke">Carousels with 10 slides rendered automatically (1080×1350) – the brand's logo, colours, fonts and photos</li>
+          <li data-de="Prüft jede Slide: sichere Zone, Kontrast nach WCAG, Mindestschrift">Checks every slide: safe zone, WCAG contrast, minimum font size</li>
+          <li data-de="Animierte Reels im Markendesign – Text ändern, neu rendern, als MP4 laden">Animated reels in the brand design – edit the text, re-render, download as MP4</li>
+          <li data-de="Vom Entwurf zum Post: Prüfung, Caption kopieren, Export als Word oder nach Canva">From draft to post: review, copy the caption, export to Word or Canva</li>
+        </ul>
+        <ul class="chips"><li>Python</li><li>FastAPI</li><li data-de="Automatisches Rendering">Automated rendering</li><li>Motion design</li><li>Claude Code</li></ul>
+      </div>
+      <div class="demo"><div class="demo-h"><span style="all:unset" data-de="Echte Beispiele aus dem Studio">Real examples from the studio</span><span data-de="Maklerbüro">broker</span></div>
+        <div class="studio">
+          <figure class="phone" style="margin:0"><div class="scr car"><div class="car-track" id="carTrack"><img src="projects/studio/slide-01.jpg" alt="" loading="lazy"><img src="projects/studio/slide-02.jpg" alt="" loading="lazy"><img src="projects/studio/slide-03.jpg" alt="" loading="lazy"><img src="projects/studio/slide-04.jpg" alt="" loading="lazy"><img src="projects/studio/slide-05.jpg" alt="" loading="lazy"><img src="projects/studio/slide-06.jpg" alt="" loading="lazy"><img src="projects/studio/slide-07.jpg" alt="" loading="lazy"><img src="projects/studio/slide-08.jpg" alt="" loading="lazy"><img src="projects/studio/slide-09.jpg" alt="" loading="lazy"><img src="projects/studio/slide-10.jpg" alt="" loading="lazy"></div></div><div class="dots" id="carDots"></div><figcaption data-de="Karussell · 10 Slides">Carousel · 10 slides</figcaption></figure>
+          <figure class="phone" style="margin:0"><div class="scr reel"><video class="scrollvid" muted loop playsinline preload="none" poster="projects/studio/reel-erbe.jpg" aria-label="Reel"><source src="projects/studio/reel-erbe.mp4" type="video/mp4"></video></div><figcaption data-de="Reel · 38 s, animiert">Reel · 38 s, animated</figcaption></figure>
         </div></div>
     </div>
   </div>
@@ -496,18 +542,20 @@
     <p class="lead" data-de="Produkte, Tools und Websites, die ich selbst konzipiere und baue – alles privat, in meiner Freizeit.">Products, tools and websites I design and build myself – all privately, in my free time.</p>
     <div class="pgrid">
       <article class="pcard big rv">
-        <div class="shot"><div class="bar2"><i></i><i></i><i></i><span>dermafinder</span></div><video class="scrollvid" muted loop playsinline preload="none" poster="projects/dermafinder.jpg" aria-label="DermaFinder – scroll-through"><source src="projects/dermafinder.mp4" type="video/mp4"></video></div>
-        <div class="pbody"><div class="pmeta"><small data-de="Gesundheitsplattform">Health platform</small></div>
-          <h3>DermaFinder</h3>
-          <p data-de="Haut-, Kopfhaut- und Haarprobleme so erklärt, dass jeder sie versteht – belegt mit Studien und Leitlinien. 22 Hautprobleme, 160 Quellen, ein 3D-Haut-Querschnitt und ein ehrliches Ranking von 60 Produkten.">Skin, scalp and hair problems explained so anyone understands them – backed by studies and guidelines. 22 conditions, 160 cited sources, a 3D skin cross-section and an honest ranking of 60 products.</p>
-          <ul class="chips"><li>React</li><li>3D</li><li>Research</li></ul></div>
+        <div class="shot"><div class="bar2"><i></i><i></i><i></i><span>real estate</span></div><video class="scrollvid" muted loop playsinline preload="none" poster="projects/stalter.jpg" aria-label="Real-estate website – scroll-through"><source src="projects/stalter.mp4" type="video/mp4"></video></div>
+        <div class="pbody"><div class="pmeta"><small data-de="Website">Website</small></div>
+          <h3 data-de="Makler-Relaunch">Real-estate broker relaunch</h3>
+          <p data-de="Website für ein familiengeführtes Maklerbüro.">Website for a family-run real-estate broker.</p>
+          <ul class="ticks"><li data-de="Objekte synchronisieren sich automatisch mit dem onOffice-CRM">Listings sync automatically with the onOffice CRM</li><li data-de="Anfragen landen mit Suchprofil und Exposé-Versand direkt im CRM">Inquiries land in the CRM with search profile and auto exposé</li><li data-de="Eigenes Bewertungstool, an 88 Verkäufen kalibriert – ersetzt ein Fremdtool">Own valuation tool, calibrated on 88 sales – replaces a paid tool</li><li data-de="PageSpeed mobil 47 → 89, Desktop 100, ohne Cookies">PageSpeed mobile 47 → 89, desktop 100, no cookies</li></ul>
+          <ul class="chips"><li>onOffice CRM</li><li data-de="Lead-Strecken">Lead funnels</li><li>React</li><li>PageSpeed 89</li></ul></div>
       </article>
       <article class="pcard big flip rv">
         <div class="shot"><div class="bar2"><i></i><i></i><i></i><span data-de="content intelligence · Profil-Check (Account anonymisiert)">content intelligence · profile check (account anonymized)</span></div><video class="scrollvid" muted loop playsinline preload="none" poster="projects/content-intelligence.jpg" aria-label="Content Intelligence – scroll-through"><source src="projects/content-intelligence.mp4" type="video/mp4"></video></div>
-        <div class="pbody"><div class="pmeta"><small data-de="KI-Analyse-Studio">AI analytics studio</small></div>
+        <div class="pbody"><div class="pmeta"><small data-de="Privates Projekt">Private project</small></div>
           <h3>Content Intelligence</h3>
-          <p data-de="Ein Social-Media-Analyse-Studio. Der Profil-Check liest bis zu 100 Posts und zeigt, was performt: einen Lift-Multiplikator pro Format (Reel vs. Karussell vs. Bild), Thema und Wochentag – dazu Reel- und Beitragsanalyse, Wettbewerbsvergleiche, Content-Pläne und ein Video-Studio. Claude ist der Analyst, ein Team aus KI-Agenten verbessert es laufend.">A social media analytics studio. The profile check reads up to 100 posts and shows what performs: a lift multiplier per format (reel vs. carousel vs. image), topic and weekday – plus reel and post analysis, competitor comparisons, content plans and a video studio. Claude is the analyst, a team of AI agents keeps improving it.</p>
-          <ul class="chips"><li>Python</li><li>Streamlit</li><li>Claude</li><li>Computer vision</li></ul></div>
+          <p data-de="Mein privates Growth-Tool für befreundete Micro-Influencer.">My private growth tool for micro-influencer friends.</p>
+          <ul class="ticks"><li data-de="Zieht Instagram-Daten und misst jeden Post am Profil-Median">Pulls Instagram data and benchmarks every post against the profile median</li><li data-de="Zeigt, was trägt: Format, Thema, Wochentag, Top &amp; Flop">Shows what works: format, topic, weekday, top &amp; flop</li><li data-de="Fazit und 3 To-dos für die Woche">A verdict and 3 to-dos for the week</li><li data-de="Wochenplan mit Uhrzeit, Drehidee und Hooks zum Testen">Weekly plan with posting time, shoot idea and hooks to test</li></ul>
+          <ul class="chips"><li>Growth</li><li>Instagram analytics</li><li>Python</li><li>Meta Graph API</li></ul></div>
       </article>
       <article class="pcard rv">
         <div class="shot"><div class="bar2"><i></i><i></i><i></i><span>shinobi atlas</span></div><video class="scrollvid" muted loop playsinline preload="none" poster="projects/shinobi-atlas.jpg" aria-label="Shinobi Atlas – scroll-through"><source src="projects/shinobi-atlas.mp4" type="video/mp4"></video></div>
@@ -523,10 +571,11 @@
           <p data-de="Ein Portfolio für eine Berliner UGC-Creatorin und Model, das Marken in Sekunden zeigt, was sie bekommen: Leistungen, Reels mit echten Ergebnissen, Instagram-Zahlen und bisherige Kooperationen.">A portfolio for a Berlin UGC creator &amp; model that shows brands in seconds what they get: services, reels with real results, Instagram stats and past collaborations.</p></div>
       </article>
       <article class="pcard rv">
-        <div class="shot"><div class="bar2"><i></i><i></i><i></i><span>real estate</span></div><video class="scrollvid" muted loop playsinline preload="none" poster="projects/stalter.jpg" aria-label="Real-estate website – scroll-through"><source src="projects/stalter.mp4" type="video/mp4"></video></div>
-        <div class="pbody"><div class="pmeta"><small data-de="Website">Website</small></div>
-          <h3 data-de="Makler-Relaunch">Real-estate broker relaunch</h3>
-          <p data-de="Eine 40-seitige Website für ein familiengeführtes Maklerbüro mit Exposés, Grundrissen und einem Bewertungstool auf Basis amtlicher, offener Daten – ersetzt ein kostenpflichtiges Fremdtool.">A 40-page website for a family-run broker with listings, floor plans and a property valuation tool built on official open government data – replacing a paid third-party tool.</p></div>
+        <div class="shot"><div class="bar2"><i></i><i></i><i></i><span>dermafinder</span></div><video class="scrollvid" muted loop playsinline preload="none" poster="projects/dermafinder.jpg" aria-label="DermaFinder – scroll-through"><source src="projects/dermafinder.mp4" type="video/mp4"></video></div>
+        <div class="pbody"><div class="pmeta"><small data-de="Gesundheitsplattform">Health platform</small></div>
+          <h3>DermaFinder</h3>
+          <p data-de="Haut-, Kopfhaut- und Haarprobleme so erklärt, dass jeder sie versteht – belegt mit Studien und Leitlinien. 22 Hautprobleme, 160 Quellen, ein 3D-Haut-Querschnitt und ein ehrliches Ranking von 60 Produkten.">Skin, scalp and hair problems explained so anyone understands them – backed by studies and guidelines. 22 conditions, 160 cited sources, a 3D skin cross-section and an honest ranking of 60 products.</p>
+          <ul class="chips"><li>React</li><li>3D</li><li>Research</li></ul></div>
       </article>
     </div>
     <div class="grid2">
@@ -568,10 +617,10 @@
 
   // Texte, die per JavaScript erzeugt werden
   const TXT = {
-    en: { verbs: ["sell it", "explain it", "build it"], title: "Tayyeb Hussain – Sales × Engineering", cv: "Tayyeb-Hussain-CV.pdf",
+    en: { verbs: ["sell it", "grow it", "automate it"], title: "Tayyeb Hussain – GTM × Tech", cv: "Tayyeb-Hussain-CV.pdf",
       leads: [["Beauty studio", "Berlin-Mitte · no online booking"], ["Hair salon", "Hamburg · outdated booking tool"], ["Physio clinic", "Munich · new opening"], ["Nail studio", "Cologne · phone-only booking"], ["Barbershop chain", "Vienna · 6 locations"], ["Yoga studio", "Zurich · competitor customer"]],
       levers: { c: "Connect rate", m: "Meeting rate", w: "Close rate" }, saves: (n) => `saves ${n} calls per month`, num: "en-US" },
-    de: { verbs: ["verkaufe es", "erkläre es", "baue es"], title: "Tayyeb Hussain – Sales × Engineering", cv: "Tayyeb-Hussain-Lebenslauf.pdf",
+    de: { verbs: ["verkaufe es", "lasse es wachsen", "automatisiere es"], title: "Tayyeb Hussain – GTM × Tech", cv: "Tayyeb-Hussain-Lebenslauf.pdf",
       leads: [["Beauty-Studio", "Berlin-Mitte · keine Online-Buchung"], ["Friseursalon", "Hamburg · veraltetes Buchungstool"], ["Physio-Praxis", "München · Neueröffnung"], ["Nagelstudio", "Köln · nur telefonische Buchung"], ["Barbershop-Kette", "Wien · 6 Standorte"], ["Yoga-Studio", "Zürich · Kunde der Konkurrenz"]],
       levers: { c: "Erreichbarkeit", m: "Termin-Quote", w: "Abschluss-Quote" }, saves: (n) => `spart ${n} Calls pro Monat`, num: "de-DE" },
   };
@@ -601,8 +650,10 @@
   new IntersectionObserver((es, o) => es.forEach((e) => { if (!e.isIntersecting) return; box.querySelectorAll(".lr").forEach((r, k) => setTimeout(() => { r.classList.add("in"); r.querySelector("i").style.width = r.querySelector("i").dataset.w + "%"; }, k * 150)); leadsShown = true; o.disconnect(); }), { threshold: 0.3 }).observe(box);
 
   // Workflow-Schleife
-  const steps = [...document.querySelectorAll("#flow > div")]; let fi = 0;
-  setInterval(() => { steps.forEach((s, k) => s.classList.toggle("on", k === fi)); fi = (fi + 1) % steps.length; }, 1000);
+  document.querySelectorAll(".flow").forEach((fl) => {
+    const steps = [...fl.children]; let fi = 0;
+    setInterval(() => { steps.forEach((s, k) => s.classList.toggle("on", k === fi)); fi = (fi + 1) % steps.length; }, 1000);
+  });
 
 
   // Scroll-Videos: nur abspielen, solange sie sichtbar sind (und nicht bei reduzierter Bewegung)
@@ -612,17 +663,29 @@
     vids.forEach((v) => vio.observe(v));
   }
 
-  // Funnel-Rechner
-  function calc() {
-    const t = TXT[lang], fmt = (n) => Math.ceil(n).toLocaleString(t.num);
-    const q = +$("q").value, r = { c: $("c").value / 100, m: $("m").value / 100, w: $("w").value / 100 };
-    $("o-q").textContent = q; $("o-c").textContent = $("c").value + " %"; $("o-m").textContent = $("m").value + " %"; $("o-w").textContent = $("w").value + " %";
-    const calls = (x) => q / (x.c * x.m * x.w), base = calls(r);
-    $("calls").textContent = fmt(base); $("perday").textContent = fmt(base / 20);
-    const best = Object.keys(r).map((k) => [k, base - calls({ ...r, [k]: Math.min(1, r[k] + 0.05) })]).sort((a, b) => b[1] - a[1])[0];
-    $("lever").textContent = t.levers[best[0]]; $("leverTxt").textContent = t.saves(fmt(best[1]));
+
+  // Navigation: aktuellen Abschnitt beim Scrollen gelb markieren
+  const navLinks = [...document.querySelectorAll(".links a")];
+  const navSecs = navLinks.map((a) => document.querySelector(a.getAttribute("href"))).filter(Boolean);
+  function spy() {
+    const y = window.innerHeight * 0.35; let cur = null;
+    navSecs.forEach((sec) => { if (sec.getBoundingClientRect().top <= y) cur = sec.id; });
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) cur = navSecs[navSecs.length - 1]?.id;
+    navLinks.forEach((a) => a.classList.toggle("on", a.getAttribute("href") === "#" + cur));
   }
-  ["q", "c", "m", "w"].forEach((id) => $(id).addEventListener("input", calc));
+  window.addEventListener("scroll", spy, { passive: true }); spy();
+
+  // Content Studio: Karussell blättert automatisch, solange es sichtbar ist
+  const track = $("carTrack"), dotsBox = $("carDots");
+  if (track) {
+    const n = track.children.length; let ci = 0, carOn = false;
+    dotsBox.innerHTML = Array.from({ length: n }, () => "<i></i>").join("");
+    const showSlide = (k) => { ci = (k + n) % n; track.style.transform = `translateX(${-ci * 100}%)`; [...dotsBox.children].forEach((d, j) => d.classList.toggle("on", j === ci)); };
+    showSlide(0);
+    track.parentElement.addEventListener("click", () => showSlide(ci + 1));
+    new IntersectionObserver((es) => es.forEach((e) => { carOn = e.isIntersecting; })).observe(track);
+    if (!calm) setInterval(() => { if (carOn) showSlide(ci + 1); }, 2200);
+  }
 
   // Sprache umschalten: Elemente mit data-de tauschen ihren Inhalt
   function setLang(l) {
@@ -637,7 +700,7 @@
     document.querySelectorAll(".cv-name").forEach((s) => (s.textContent = TXT[l].cv));
     $("swap").textContent = TXT[l].verbs[vi % 3];
     document.title = TXT[l].title;
-    renderLeads(); calc();
+    renderLeads();
     try { localStorage.setItem("lang", l); } catch (e) {}
   }
   document.querySelectorAll(".lang button").forEach((b) => b.addEventListener("click", () => setLang(b.dataset.lang)));
